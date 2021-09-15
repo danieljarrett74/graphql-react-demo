@@ -1,0 +1,6 @@
+# import Workflow from "workflow.graphql"
+
+
+type Query {
+    workflow(id: ID!): Workflow
+}

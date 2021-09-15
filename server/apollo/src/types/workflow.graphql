@@ -1,0 +1,21 @@
+
+type Workflow {
+    id:ID!
+    flows:[Flow]
+}
+
+
+interface Flow {
+    id:ID!
+}
+
+type DemoFlowA implements Flow {
+    id:ID!
+    list:[String]
+}
+
+type DemoFlowB implements Flow {
+    id:ID!
+    name:String!
+    description:String!
+}
