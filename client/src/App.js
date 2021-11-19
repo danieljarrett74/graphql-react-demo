@@ -4,7 +4,6 @@ import {ApolloClient, ApolloProvider, HttpLink, InMemoryCache} from '@apollo/cli
 import MineralUIPage from './pages/mineralui';
 import AtlasKitPage from './pages/atlaskit';
 import BaseWebPage from './pages/baseweb';
-import CarbonPage from './pages/carbon';
 
 // Instantiate required constructor fields
 const cache = new InMemoryCache();
@@ -35,7 +34,6 @@ class App extends Component {
                         <Route path="/mineralui" component={MineralUIPage} exact/>
                         <Route path="/atlaskit" component={AtlasKitPage} exact/>
                         <Route path="/baseweb" component={BaseWebPage} exact/>
-                        <Route path="/carbon" component={CarbonPage} exact/>
                     </Switch>
                 </BrowserRouter>
             </ApolloProvider>
